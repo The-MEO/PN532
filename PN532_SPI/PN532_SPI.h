@@ -10,7 +10,7 @@ class PN532_SPI : public PN532Interface
 public:
     PN532_SPI(SPIClass &spi, uint8_t ss);
 
-    void begin();
+    void begin(int8_t sck=-1, int8_t miso=-1, int8_t mosi=-1, int8_t ss=-1);
     void wakeup();
     int8_t writeCommand(const uint8_t *header, uint8_t hlen, const uint8_t *body = 0, uint8_t blen = 0);
 

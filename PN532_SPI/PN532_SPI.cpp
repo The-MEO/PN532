@@ -14,11 +14,18 @@ PN532_SPI::PN532_SPI(SPIClass &spi, uint8_t ss)
     _ss = ss;
 }
 
-void PN532_SPI::begin()
+void PN532_SPI::begin(int8_t sck, int8_t miso, int8_t mosi, int8_t ss)
 {
     pinMode(_ss, OUTPUT);
 
-    _spi->begin();
+    // Default pins are being used.
+    if(sck == -1)
+    {
+        _spi->begin(); 
+    } else {
+        _spi->begin(sck, miso, mosi, ss);
+    }
+
     _spi->setDataMode(SPI_MODE0); // PN532 only supports mode0
     _spi->setBitOrder(LSBFIRST);
 #if defined __SAM3X8E__
