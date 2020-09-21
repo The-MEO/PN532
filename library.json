@@ -29,6 +29,12 @@
         "lib_ldf_mode": "deep+",
         "includeDir": ".",
         "srcDir": ".",
+        "srcFilter": [
+            "+<PN532/*>",
+            "+<PN532_HSU/>",
+            "+<PN532_I2C/>",
+            "+<PN532_SPI/>"
+        ],
         "flags": [
             "-I PN532",
             "-I PN532_HSU",
