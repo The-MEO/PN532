@@ -1,9 +1,9 @@
 ## NFC library 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/181ab2beeb9a488c83933687f47998e8)](https://app.codacy.com/manual/The-MEO/PN532?utm_source=github.com&utm_medium=referral&utm_content=The-MEO/PN532&utm_campaign=Badge_Grade_Dashboard)
 
 This is an library for PN532 to use NFC technology.
 It is for [NFC Shield](http://goo.gl/Cac2OH) and [Grove - NFC](http://goo.gl/L3Uw5G).
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/181ab2beeb9a488c83933687f47998e8)](https://app.codacy.com/manual/The-MEO/PN532?utm_source=github.com&utm_medium=referral&utm_content=The-MEO/PN532&utm_campaign=Badge_Grade_Dashboard)
 [![NFC Shield](https://statics3.seeedstudio.com/images/113030001%201.jpg)](http://goo.gl/Cac2OH)
 [![Grove - NFC](https://statics3.seeedstudio.com/images/product/grove%20nfc.jpg)](http://goo.gl/L3Uw5G)
 
