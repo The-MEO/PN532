@@ -1,0 +1,40 @@
+{
+    "name": "PN532",
+    "version": "1.0.0",
+    "description": "This is an library for PN532 to use NFC technology. It is for NFC Shield and Grove - NFC.",
+    "keywords": "nfc, PN532",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Seeed-Studio/PN532"
+    },
+    "authors": [
+        {
+            "name": "Don",
+            "url": "https://github.com/don"
+        },
+        {
+            "name": "awieser",
+            "url": "https://github.com/awieser"
+        },
+        {
+            "name": "JiapengLi",
+            "url": "https://github.com/JiapengLi"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "homepage": "https://github.com/Seeed-Studio/PN532",
+    "frameworks": "arduino",
+    "platforms": "*",
+    "build": {
+        "lib_ldf_mode": "deep+",
+        "includeDir": ".",
+        "srcDir": ".",
+        "flags": [
+            "-I PN532",
+            "-I PN532_HSU",
+            "-I PN532_I2C",
+            "-I PN532_SPI",
+            "-I PN532_SWHSU"
+        ]
+    }
+}
